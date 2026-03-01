@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install & Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+```
+
+Click **Commit changes** ✅
+
+---
+
+### Step 2 — Enable GitHub Pages
+1. Repo → **Settings** → **Pages**
+2. Source → **gh-pages** branch → Save
+
+---
+
+### Step 3 — Watch it build
+Go to **Actions** tab in your repo — you'll see it building live ⚙️
+
+Once green ✅ your app is live at:
+```
+https://Naeemk10.github.io/threat-hunting-plan
