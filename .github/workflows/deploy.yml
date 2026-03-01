@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install & Build
+      - name: Install and Build
         run: |
           npm install
           npm run build
@@ -25,21 +25,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-```
-
-Click **Commit changes** ✅
-
----
-
-### Step 2 — Enable GitHub Pages
-1. Repo → **Settings** → **Pages**
-2. Source → **gh-pages** branch → Save
-
----
-
-### Step 3 — Watch it build
-Go to **Actions** tab in your repo — you'll see it building live ⚙️
-
-Once green ✅ your app is live at:
-```
-https://Naeemk10.github.io/threat-hunting-plan
