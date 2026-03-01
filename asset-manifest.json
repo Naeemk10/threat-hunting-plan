@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/threat-hunting-plan/static/js/main.dfc9db1b.js",
+    "index.html": "/threat-hunting-plan/index.html",
+    "main.dfc9db1b.js.map": "/threat-hunting-plan/static/js/main.dfc9db1b.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.dfc9db1b.js"
+  ]
+}
