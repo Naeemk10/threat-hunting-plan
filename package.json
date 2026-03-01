@@ -1,7 +1,7 @@
 {
   "name": "threat-hunting-plan",
   "version": "1.0.0",
-  "homepage": ".",
+  "homepage": "https://Naeemk10.github.io/threat-hunting-plan",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
